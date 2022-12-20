@@ -1,0 +1,34 @@
+{
+  "name": "@scom/impossible-swap-contract",
+  "version": "0.1.1",
+  "description": "",
+  "main": "lib/index.js",
+  "plugin": "dist/index.js",
+  "pluginTypes": "pluginTypes/index.d.ts",
+  "types": "types/index.d.ts",
+  "scripts": {
+    "build": "rm -rf lib && rm -rf dist && rm -rf types && npm run build:contracts && npm run build:lib && npm run build:dist",
+    "build:contracts": "rm -rf src/contracts && sol2ts solconfig.json",
+    "build:dist": "npx @ijstech/compiler",
+    "build:lib": "tsc",
+    "deploy": "ts-node tools/deploy.ts",
+    "test": "mocha --ui tdd --exit --require ts-node/register test/*.test.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@ijstech/eth-contract": "^0.1.4"
+  },  
+  "devDependencies": {
+    "@ijstech/cli": "^0.1.26",
+    "@ijstech/compiler": "^0.1.22",
+    "@ijstech/eth-wallet": "^0.1.35",
+    "@types/node": "16.11.23",
+    "@types/mocha": "9.1.1",
+    "ganache": "7.4.0",
+    "ts-node": "10.5.0",
+    "typescript": "4.5.5",
+    "mocha": "9.2.0",
+    "@openzeppelin/contracts": "4.7.0"
+  }
+}
