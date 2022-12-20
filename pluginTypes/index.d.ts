@@ -1,5 +1,5 @@
-/// <amd-module name="@scom/impossible-swap-contract/contracts/ImpossibleERC20.json.ts" />
-declare module "@scom/impossible-swap-contract/contracts/ImpossibleERC20.json.ts" {
+/// <amd-module name="@scom/oswap-impossible-swap-contract/contracts/ImpossibleERC20.json.ts" />
+declare module "@scom/oswap-impossible-swap-contract/contracts/ImpossibleERC20.json.ts" {
     const _default: {
         abi: ({
             inputs: any[];
@@ -40,8 +40,8 @@ declare module "@scom/impossible-swap-contract/contracts/ImpossibleERC20.json.ts
     };
     export default _default;
 }
-/// <amd-module name="@scom/impossible-swap-contract/contracts/ImpossibleERC20.ts" />
-declare module "@scom/impossible-swap-contract/contracts/ImpossibleERC20.ts" {
+/// <amd-module name="@scom/oswap-impossible-swap-contract/contracts/ImpossibleERC20.ts" />
+declare module "@scom/oswap-impossible-swap-contract/contracts/ImpossibleERC20.ts" {
     import { IWallet, Contract as _Contract, TransactionReceipt, BigNumber, Event, TransactionOptions } from "@ijstech/eth-contract";
     export interface IAllowanceParams {
         param1: string;
@@ -137,8 +137,8 @@ declare module "@scom/impossible-swap-contract/contracts/ImpossibleERC20.ts" {
         }
     }
 }
-/// <amd-module name="@scom/impossible-swap-contract/contracts/ImpossiblePair.json.ts" />
-declare module "@scom/impossible-swap-contract/contracts/ImpossiblePair.json.ts" {
+/// <amd-module name="@scom/oswap-impossible-swap-contract/contracts/ImpossiblePair.json.ts" />
+declare module "@scom/oswap-impossible-swap-contract/contracts/ImpossiblePair.json.ts" {
     const _default_1: {
         abi: ({
             inputs: any[];
@@ -179,8 +179,8 @@ declare module "@scom/impossible-swap-contract/contracts/ImpossiblePair.json.ts"
     };
     export default _default_1;
 }
-/// <amd-module name="@scom/impossible-swap-contract/contracts/ImpossiblePair.ts" />
-declare module "@scom/impossible-swap-contract/contracts/ImpossiblePair.ts" {
+/// <amd-module name="@scom/oswap-impossible-swap-contract/contracts/ImpossiblePair.ts" />
+declare module "@scom/oswap-impossible-swap-contract/contracts/ImpossiblePair.ts" {
     import { IWallet, Contract as _Contract, TransactionReceipt, BigNumber, Event, TransactionOptions } from "@ijstech/eth-contract";
     export interface IAllowanceParams {
         param1: string;
@@ -484,8 +484,8 @@ declare module "@scom/impossible-swap-contract/contracts/ImpossiblePair.ts" {
         }
     }
 }
-/// <amd-module name="@scom/impossible-swap-contract/contracts/ImpossibleRouter.json.ts" />
-declare module "@scom/impossible-swap-contract/contracts/ImpossibleRouter.json.ts" {
+/// <amd-module name="@scom/oswap-impossible-swap-contract/contracts/ImpossibleRouter.json.ts" />
+declare module "@scom/oswap-impossible-swap-contract/contracts/ImpossibleRouter.json.ts" {
     const _default_2: {
         abi: ({
             inputs: {
@@ -522,8 +522,8 @@ declare module "@scom/impossible-swap-contract/contracts/ImpossibleRouter.json.t
     };
     export default _default_2;
 }
-/// <amd-module name="@scom/impossible-swap-contract/contracts/ImpossibleRouter.ts" />
-declare module "@scom/impossible-swap-contract/contracts/ImpossibleRouter.ts" {
+/// <amd-module name="@scom/oswap-impossible-swap-contract/contracts/ImpossibleRouter.ts" />
+declare module "@scom/oswap-impossible-swap-contract/contracts/ImpossibleRouter.ts" {
     import { IWallet, Contract as _Contract, TransactionReceipt, BigNumber, TransactionOptions } from "@ijstech/eth-contract";
     export interface IDeployParams {
         pairFactory: string;
@@ -785,8 +785,8 @@ declare module "@scom/impossible-swap-contract/contracts/ImpossibleRouter.ts" {
         private assign;
     }
 }
-/// <amd-module name="@scom/impossible-swap-contract/contracts/ImpossibleRouterExtension.json.ts" />
-declare module "@scom/impossible-swap-contract/contracts/ImpossibleRouterExtension.json.ts" {
+/// <amd-module name="@scom/oswap-impossible-swap-contract/contracts/ImpossibleRouterExtension.json.ts" />
+declare module "@scom/oswap-impossible-swap-contract/contracts/ImpossibleRouterExtension.json.ts" {
     const _default_3: {
         abi: ({
             inputs: {
@@ -817,8 +817,8 @@ declare module "@scom/impossible-swap-contract/contracts/ImpossibleRouterExtensi
     };
     export default _default_3;
 }
-/// <amd-module name="@scom/impossible-swap-contract/contracts/ImpossibleRouterExtension.ts" />
-declare module "@scom/impossible-swap-contract/contracts/ImpossibleRouterExtension.ts" {
+/// <amd-module name="@scom/oswap-impossible-swap-contract/contracts/ImpossibleRouterExtension.ts" />
+declare module "@scom/oswap-impossible-swap-contract/contracts/ImpossibleRouterExtension.ts" {
     import { IWallet, Contract as _Contract, TransactionReceipt, BigNumber, TransactionOptions } from "@ijstech/eth-contract";
     export interface IAddLiquidityParams {
         tokenA: string;
@@ -909,8 +909,8 @@ declare module "@scom/impossible-swap-contract/contracts/ImpossibleRouterExtensi
         private assign;
     }
 }
-/// <amd-module name="@scom/impossible-swap-contract/contracts/ImpossibleSwapFactory.json.ts" />
-declare module "@scom/impossible-swap-contract/contracts/ImpossibleSwapFactory.json.ts" {
+/// <amd-module name="@scom/oswap-impossible-swap-contract/contracts/ImpossibleSwapFactory.json.ts" />
+declare module "@scom/oswap-impossible-swap-contract/contracts/ImpossibleSwapFactory.json.ts" {
     const _default_4: {
         abi: ({
             inputs: {
@@ -955,8 +955,8 @@ declare module "@scom/impossible-swap-contract/contracts/ImpossibleSwapFactory.j
     };
     export default _default_4;
 }
-/// <amd-module name="@scom/impossible-swap-contract/contracts/ImpossibleSwapFactory.ts" />
-declare module "@scom/impossible-swap-contract/contracts/ImpossibleSwapFactory.ts" {
+/// <amd-module name="@scom/oswap-impossible-swap-contract/contracts/ImpossibleSwapFactory.ts" />
+declare module "@scom/oswap-impossible-swap-contract/contracts/ImpossibleSwapFactory.ts" {
     import { IWallet, Contract as _Contract, TransactionReceipt, BigNumber, Event, TransactionOptions } from "@ijstech/eth-contract";
     export interface IChangeTokenAccessParams {
         token: string;
@@ -1049,8 +1049,8 @@ declare module "@scom/impossible-swap-contract/contracts/ImpossibleSwapFactory.t
         }
     }
 }
-/// <amd-module name="@scom/impossible-swap-contract/contracts/ImpossibleWrappedToken.json.ts" />
-declare module "@scom/impossible-swap-contract/contracts/ImpossibleWrappedToken.json.ts" {
+/// <amd-module name="@scom/oswap-impossible-swap-contract/contracts/ImpossibleWrappedToken.json.ts" />
+declare module "@scom/oswap-impossible-swap-contract/contracts/ImpossibleWrappedToken.json.ts" {
     const _default_5: {
         abi: ({
             inputs: {
@@ -1095,8 +1095,8 @@ declare module "@scom/impossible-swap-contract/contracts/ImpossibleWrappedToken.
     };
     export default _default_5;
 }
-/// <amd-module name="@scom/impossible-swap-contract/contracts/ImpossibleWrappedToken.ts" />
-declare module "@scom/impossible-swap-contract/contracts/ImpossibleWrappedToken.ts" {
+/// <amd-module name="@scom/oswap-impossible-swap-contract/contracts/ImpossibleWrappedToken.ts" />
+declare module "@scom/oswap-impossible-swap-contract/contracts/ImpossibleWrappedToken.ts" {
     import { IWallet, Contract as _Contract, TransactionReceipt, BigNumber, Event, TransactionOptions } from "@ijstech/eth-contract";
     export interface IDeployParams {
         underlying: string;
@@ -1206,8 +1206,8 @@ declare module "@scom/impossible-swap-contract/contracts/ImpossibleWrappedToken.
         }
     }
 }
-/// <amd-module name="@scom/impossible-swap-contract/contracts/ImpossibleWrapperFactory.json.ts" />
-declare module "@scom/impossible-swap-contract/contracts/ImpossibleWrapperFactory.json.ts" {
+/// <amd-module name="@scom/oswap-impossible-swap-contract/contracts/ImpossibleWrapperFactory.json.ts" />
+declare module "@scom/oswap-impossible-swap-contract/contracts/ImpossibleWrapperFactory.json.ts" {
     const _default_6: {
         abi: ({
             inputs: {
@@ -1252,8 +1252,8 @@ declare module "@scom/impossible-swap-contract/contracts/ImpossibleWrapperFactor
     };
     export default _default_6;
 }
-/// <amd-module name="@scom/impossible-swap-contract/contracts/ImpossibleWrapperFactory.ts" />
-declare module "@scom/impossible-swap-contract/contracts/ImpossibleWrapperFactory.ts" {
+/// <amd-module name="@scom/oswap-impossible-swap-contract/contracts/ImpossibleWrapperFactory.ts" />
+declare module "@scom/oswap-impossible-swap-contract/contracts/ImpossibleWrapperFactory.ts" {
     import { IWallet, Contract as _Contract, TransactionReceipt, BigNumber, Event, TransactionOptions } from "@ijstech/eth-contract";
     export interface ICreatePairingParams {
         underlying: string;
@@ -1306,8 +1306,8 @@ declare module "@scom/impossible-swap-contract/contracts/ImpossibleWrapperFactor
         }
     }
 }
-/// <amd-module name="@scom/impossible-swap-contract/contracts/test/DeflatingERC20.json.ts" />
-declare module "@scom/impossible-swap-contract/contracts/test/DeflatingERC20.json.ts" {
+/// <amd-module name="@scom/oswap-impossible-swap-contract/contracts/test/DeflatingERC20.json.ts" />
+declare module "@scom/oswap-impossible-swap-contract/contracts/test/DeflatingERC20.json.ts" {
     const _default_7: {
         abi: ({
             inputs: {
@@ -1352,8 +1352,8 @@ declare module "@scom/impossible-swap-contract/contracts/test/DeflatingERC20.jso
     };
     export default _default_7;
 }
-/// <amd-module name="@scom/impossible-swap-contract/contracts/test/DeflatingERC20.ts" />
-declare module "@scom/impossible-swap-contract/contracts/test/DeflatingERC20.ts" {
+/// <amd-module name="@scom/oswap-impossible-swap-contract/contracts/test/DeflatingERC20.ts" />
+declare module "@scom/oswap-impossible-swap-contract/contracts/test/DeflatingERC20.ts" {
     import { IWallet, Contract as _Contract, TransactionReceipt, BigNumber, Event, TransactionOptions } from "@ijstech/eth-contract";
     export interface IAllowanceParams {
         param1: string;
@@ -1449,8 +1449,8 @@ declare module "@scom/impossible-swap-contract/contracts/test/DeflatingERC20.ts"
         }
     }
 }
-/// <amd-module name="@scom/impossible-swap-contract/contracts/test/ERC20.json.ts" />
-declare module "@scom/impossible-swap-contract/contracts/test/ERC20.json.ts" {
+/// <amd-module name="@scom/oswap-impossible-swap-contract/contracts/test/ERC20.json.ts" />
+declare module "@scom/oswap-impossible-swap-contract/contracts/test/ERC20.json.ts" {
     const _default_8: {
         abi: ({
             inputs: {
@@ -1495,8 +1495,8 @@ declare module "@scom/impossible-swap-contract/contracts/test/ERC20.json.ts" {
     };
     export default _default_8;
 }
-/// <amd-module name="@scom/impossible-swap-contract/contracts/test/ERC20.ts" />
-declare module "@scom/impossible-swap-contract/contracts/test/ERC20.ts" {
+/// <amd-module name="@scom/oswap-impossible-swap-contract/contracts/test/ERC20.ts" />
+declare module "@scom/oswap-impossible-swap-contract/contracts/test/ERC20.ts" {
     import { IWallet, Contract as _Contract, TransactionReceipt, BigNumber, Event, TransactionOptions } from "@ijstech/eth-contract";
     export interface IAllowanceParams {
         param1: string;
@@ -1592,8 +1592,8 @@ declare module "@scom/impossible-swap-contract/contracts/test/ERC20.ts" {
         }
     }
 }
-/// <amd-module name="@scom/impossible-swap-contract/contracts/test/WETH9.json.ts" />
-declare module "@scom/impossible-swap-contract/contracts/test/WETH9.json.ts" {
+/// <amd-module name="@scom/oswap-impossible-swap-contract/contracts/test/WETH9.json.ts" />
+declare module "@scom/oswap-impossible-swap-contract/contracts/test/WETH9.json.ts" {
     const _default_9: {
         abi: ({
             anonymous: boolean;
@@ -1627,8 +1627,8 @@ declare module "@scom/impossible-swap-contract/contracts/test/WETH9.json.ts" {
     };
     export default _default_9;
 }
-/// <amd-module name="@scom/impossible-swap-contract/contracts/test/WETH9.ts" />
-declare module "@scom/impossible-swap-contract/contracts/test/WETH9.ts" {
+/// <amd-module name="@scom/oswap-impossible-swap-contract/contracts/test/WETH9.ts" />
+declare module "@scom/oswap-impossible-swap-contract/contracts/test/WETH9.ts" {
     import { IWallet, Contract as _Contract, TransactionReceipt, BigNumber, Event, TransactionOptions } from "@ijstech/eth-contract";
     export interface IAllowanceParams {
         param1: string;
@@ -1724,23 +1724,23 @@ declare module "@scom/impossible-swap-contract/contracts/test/WETH9.ts" {
         }
     }
 }
-/// <amd-module name="@scom/impossible-swap-contract/contracts/index.ts" />
-declare module "@scom/impossible-swap-contract/contracts/index.ts" {
-    export { ImpossibleERC20 } from "@scom/impossible-swap-contract/contracts/ImpossibleERC20.ts";
-    export { ImpossiblePair } from "@scom/impossible-swap-contract/contracts/ImpossiblePair.ts";
-    export { ImpossibleRouter } from "@scom/impossible-swap-contract/contracts/ImpossibleRouter.ts";
-    export { ImpossibleRouterExtension } from "@scom/impossible-swap-contract/contracts/ImpossibleRouterExtension.ts";
-    export { ImpossibleSwapFactory } from "@scom/impossible-swap-contract/contracts/ImpossibleSwapFactory.ts";
-    export { ImpossibleWrappedToken } from "@scom/impossible-swap-contract/contracts/ImpossibleWrappedToken.ts";
-    export { ImpossibleWrapperFactory } from "@scom/impossible-swap-contract/contracts/ImpossibleWrapperFactory.ts";
-    export { DeflatingERC20 } from "@scom/impossible-swap-contract/contracts/test/DeflatingERC20.ts";
-    export { ERC20 } from "@scom/impossible-swap-contract/contracts/test/ERC20.ts";
-    export { WETH9 } from "@scom/impossible-swap-contract/contracts/test/WETH9.ts";
+/// <amd-module name="@scom/oswap-impossible-swap-contract/contracts/index.ts" />
+declare module "@scom/oswap-impossible-swap-contract/contracts/index.ts" {
+    export { ImpossibleERC20 } from "@scom/oswap-impossible-swap-contract/contracts/ImpossibleERC20.ts";
+    export { ImpossiblePair } from "@scom/oswap-impossible-swap-contract/contracts/ImpossiblePair.ts";
+    export { ImpossibleRouter } from "@scom/oswap-impossible-swap-contract/contracts/ImpossibleRouter.ts";
+    export { ImpossibleRouterExtension } from "@scom/oswap-impossible-swap-contract/contracts/ImpossibleRouterExtension.ts";
+    export { ImpossibleSwapFactory } from "@scom/oswap-impossible-swap-contract/contracts/ImpossibleSwapFactory.ts";
+    export { ImpossibleWrappedToken } from "@scom/oswap-impossible-swap-contract/contracts/ImpossibleWrappedToken.ts";
+    export { ImpossibleWrapperFactory } from "@scom/oswap-impossible-swap-contract/contracts/ImpossibleWrapperFactory.ts";
+    export { DeflatingERC20 } from "@scom/oswap-impossible-swap-contract/contracts/test/DeflatingERC20.ts";
+    export { ERC20 } from "@scom/oswap-impossible-swap-contract/contracts/test/ERC20.ts";
+    export { WETH9 } from "@scom/oswap-impossible-swap-contract/contracts/test/WETH9.ts";
 }
-/// <amd-module name="@scom/impossible-swap-contract/swap-core.ts" />
-declare module "@scom/impossible-swap-contract/swap-core.ts" { }
-/// <amd-module name="@scom/impossible-swap-contract" />
-declare module "@scom/impossible-swap-contract" {
-    export * as Contracts from "@scom/impossible-swap-contract/contracts/index.ts";
-    export * as ImpossibleSwapCore from "@scom/impossible-swap-contract/swap-core.ts";
+/// <amd-module name="@scom/oswap-impossible-swap-contract/swap-core.ts" />
+declare module "@scom/oswap-impossible-swap-contract/swap-core.ts" { }
+/// <amd-module name="@scom/oswap-impossible-swap-contract" />
+declare module "@scom/oswap-impossible-swap-contract" {
+    export * as Contracts from "@scom/oswap-impossible-swap-contract/contracts/index.ts";
+    export * as ImpossibleSwapCore from "@scom/oswap-impossible-swap-contract/swap-core.ts";
 }
