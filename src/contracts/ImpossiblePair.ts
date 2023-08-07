@@ -49,9 +49,9 @@ export class ImpossiblePair extends _Contract{
     decodeChangeInvariantEvent(event: Event): ImpossiblePair.ChangeInvariantEvent{
         let result = event.data;
         return {
-            _isXybk: result._isXybk,
-            _newBoost0: new BigNumber(result._newBoost0),
-            _newBoost1: new BigNumber(result._newBoost1),
+            isXybk: result._isXybk,
+            newBoost0: new BigNumber(result._newBoost0),
+            newBoost1: new BigNumber(result._newBoost1),
             _event: event
         };
     }
@@ -111,12 +111,12 @@ export class ImpossiblePair extends _Contract{
     decodeUpdatedBoostEvent(event: Event): ImpossiblePair.UpdatedBoostEvent{
         let result = event.data;
         return {
-            _oldBoost0: new BigNumber(result._oldBoost0),
-            _oldBoost1: new BigNumber(result._oldBoost1),
-            _newBoost0: new BigNumber(result._newBoost0),
-            _newBoost1: new BigNumber(result._newBoost1),
-            _start: new BigNumber(result._start),
-            _end: new BigNumber(result._end),
+            oldBoost0: new BigNumber(result._oldBoost0),
+            oldBoost1: new BigNumber(result._oldBoost1),
+            newBoost0: new BigNumber(result._newBoost0),
+            newBoost1: new BigNumber(result._newBoost1),
+            start: new BigNumber(result._start),
+            end: new BigNumber(result._end),
             _event: event
         };
     }
@@ -126,8 +126,8 @@ export class ImpossiblePair extends _Contract{
     decodeUpdatedDelayEvent(event: Event): ImpossiblePair.UpdatedDelayEvent{
         let result = event.data;
         return {
-            _oldDelay: new BigNumber(result._oldDelay),
-            _newDelay: new BigNumber(result._newDelay),
+            oldDelay: new BigNumber(result._oldDelay),
+            newDelay: new BigNumber(result._newDelay),
             _event: event
         };
     }
@@ -137,8 +137,8 @@ export class ImpossiblePair extends _Contract{
     decodeUpdatedTradeFeesEvent(event: Event): ImpossiblePair.UpdatedTradeFeesEvent{
         let result = event.data;
         return {
-            _oldFee: new BigNumber(result._oldFee),
-            _newFee: new BigNumber(result._newFee),
+            oldFee: new BigNumber(result._oldFee),
+            newFee: new BigNumber(result._newFee),
             _event: event
         };
     }
@@ -148,7 +148,7 @@ export class ImpossiblePair extends _Contract{
     decodeUpdatedTradeStateEvent(event: Event): ImpossiblePair.UpdatedTradeStateEvent{
         let result = event.data;
         return {
-            _tradeState: new BigNumber(result._tradeState),
+            tradeState: new BigNumber(result._tradeState),
             _event: event
         };
     }
@@ -158,8 +158,8 @@ export class ImpossiblePair extends _Contract{
     decodeUpdatedWithdrawalFeeRatioEvent(event: Event): ImpossiblePair.UpdatedWithdrawalFeeRatioEvent{
         let result = event.data;
         return {
-            _oldWithdrawalFee: new BigNumber(result._oldWithdrawalFee),
-            _newWithdrawalFee: new BigNumber(result._newWithdrawalFee),
+            oldWithdrawalFee: new BigNumber(result._oldWithdrawalFee),
+            newWithdrawalFee: new BigNumber(result._newWithdrawalFee),
             _event: event
         };
     }
@@ -187,7 +187,7 @@ export class ImpossiblePair extends _Contract{
         call: (to:string, options?: TransactionOptions) => Promise<{amount0:BigNumber,amount1:BigNumber}>;
     }
     calcBoost: {
-        (options?: TransactionOptions): Promise<{_boost0:BigNumber,_boost1:BigNumber}>;
+        (options?: TransactionOptions): Promise<{boost0:BigNumber,boost1:BigNumber}>;
     }
     decimals: {
         (options?: TransactionOptions): Promise<BigNumber>;
@@ -202,10 +202,10 @@ export class ImpossiblePair extends _Contract{
         (options?: TransactionOptions): Promise<string>;
     }
     getPairSettings: {
-        (options?: TransactionOptions): Promise<{_tradeFee:BigNumber,_tradeState:BigNumber,_isXybk:boolean}>;
+        (options?: TransactionOptions): Promise<{tradeFee:BigNumber,tradeState:BigNumber,isXybk:boolean}>;
     }
     getReserves: {
-        (options?: TransactionOptions): Promise<{_reserve0:BigNumber,_reserve1:BigNumber}>;
+        (options?: TransactionOptions): Promise<{reserve0:BigNumber,reserve1:BigNumber}>;
     }
     initialize: {
         (params: IInitializeParams, options?: TransactionOptions): Promise<TransactionReceipt>;
@@ -327,11 +327,11 @@ export class ImpossiblePair extends _Contract{
             return new BigNumber(result);
         }
         this.balanceOf = balanceOf_call
-        let calcBoost_call = async (options?: TransactionOptions): Promise<{_boost0:BigNumber,_boost1:BigNumber}> => {
+        let calcBoost_call = async (options?: TransactionOptions): Promise<{boost0:BigNumber,boost1:BigNumber}> => {
             let result = await this.call('calcBoost',[],options);
             return {
-                _boost0: new BigNumber(result._boost0),
-                _boost1: new BigNumber(result._boost1)
+                boost0: new BigNumber(result._boost0),
+                boost1: new BigNumber(result._boost1)
             };
         }
         this.calcBoost = calcBoost_call
@@ -355,20 +355,20 @@ export class ImpossiblePair extends _Contract{
             return result;
         }
         this.factory = factory_call
-        let getPairSettings_call = async (options?: TransactionOptions): Promise<{_tradeFee:BigNumber,_tradeState:BigNumber,_isXybk:boolean}> => {
+        let getPairSettings_call = async (options?: TransactionOptions): Promise<{tradeFee:BigNumber,tradeState:BigNumber,isXybk:boolean}> => {
             let result = await this.call('getPairSettings',[],options);
             return {
-                _tradeFee: new BigNumber(result._tradeFee),
-                _tradeState: new BigNumber(result._tradeState),
-                _isXybk: result._isXybk
+                tradeFee: new BigNumber(result._tradeFee),
+                tradeState: new BigNumber(result._tradeState),
+                isXybk: result._isXybk
             };
         }
         this.getPairSettings = getPairSettings_call
-        let getReserves_call = async (options?: TransactionOptions): Promise<{_reserve0:BigNumber,_reserve1:BigNumber}> => {
+        let getReserves_call = async (options?: TransactionOptions): Promise<{reserve0:BigNumber,reserve1:BigNumber}> => {
             let result = await this.call('getReserves',[],options);
             return {
-                _reserve0: new BigNumber(result._reserve0),
-                _reserve1: new BigNumber(result._reserve1)
+                reserve0: new BigNumber(result._reserve0),
+                reserve1: new BigNumber(result._reserve1)
             };
         }
         this.getReserves = getReserves_call
@@ -630,14 +630,14 @@ export class ImpossiblePair extends _Contract{
 export module ImpossiblePair{
     export interface ApprovalEvent {owner:string,spender:string,value:BigNumber,_event:Event}
     export interface BurnEvent {sender:string,amount0:BigNumber,amount1:BigNumber,to:string,_event:Event}
-    export interface ChangeInvariantEvent {_isXybk:boolean,_newBoost0:BigNumber,_newBoost1:BigNumber,_event:Event}
+    export interface ChangeInvariantEvent {isXybk:boolean,newBoost0:BigNumber,newBoost1:BigNumber,_event:Event}
     export interface MintEvent {sender:string,amount0:BigNumber,amount1:BigNumber,_event:Event}
     export interface SwapEvent {sender:string,amount0In:BigNumber,amount1In:BigNumber,amount0Out:BigNumber,amount1Out:BigNumber,to:string,_event:Event}
     export interface SyncEvent {reserve0:BigNumber,reserve1:BigNumber,_event:Event}
     export interface TransferEvent {from:string,to:string,value:BigNumber,_event:Event}
-    export interface UpdatedBoostEvent {_oldBoost0:BigNumber,_oldBoost1:BigNumber,_newBoost0:BigNumber,_newBoost1:BigNumber,_start:BigNumber,_end:BigNumber,_event:Event}
-    export interface UpdatedDelayEvent {_oldDelay:BigNumber,_newDelay:BigNumber,_event:Event}
-    export interface UpdatedTradeFeesEvent {_oldFee:BigNumber,_newFee:BigNumber,_event:Event}
-    export interface UpdatedTradeStateEvent {_tradeState:BigNumber,_event:Event}
-    export interface UpdatedWithdrawalFeeRatioEvent {_oldWithdrawalFee:BigNumber,_newWithdrawalFee:BigNumber,_event:Event}
+    export interface UpdatedBoostEvent {oldBoost0:BigNumber,oldBoost1:BigNumber,newBoost0:BigNumber,newBoost1:BigNumber,start:BigNumber,end:BigNumber,_event:Event}
+    export interface UpdatedDelayEvent {oldDelay:BigNumber,newDelay:BigNumber,_event:Event}
+    export interface UpdatedTradeFeesEvent {oldFee:BigNumber,newFee:BigNumber,_event:Event}
+    export interface UpdatedTradeStateEvent {tradeState:BigNumber,_event:Event}
+    export interface UpdatedWithdrawalFeeRatioEvent {oldWithdrawalFee:BigNumber,newWithdrawalFee:BigNumber,_event:Event}
 }

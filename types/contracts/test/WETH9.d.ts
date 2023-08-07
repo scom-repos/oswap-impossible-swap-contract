@@ -19,7 +19,7 @@ export interface ITransferFromParams {
 export declare class WETH9 extends _Contract {
     static _abi: any;
     constructor(wallet: IWallet, address?: string);
-    deploy(options?: number | BigNumber | TransactionOptions): Promise<string>;
+    deploy(options?: TransactionOptions): Promise<string>;
     parseApprovalEvent(receipt: TransactionReceipt): WETH9.ApprovalEvent[];
     decodeApprovalEvent(event: Event): WETH9.ApprovalEvent;
     parseDepositEvent(receipt: TransactionReceipt): WETH9.DepositEvent[];

@@ -101,8 +101,8 @@ export declare class ImpossiblePair extends _Contract {
     };
     calcBoost: {
         (options?: TransactionOptions): Promise<{
-            _boost0: BigNumber;
-            _boost1: BigNumber;
+            boost0: BigNumber;
+            boost1: BigNumber;
         }>;
     };
     decimals: {
@@ -119,15 +119,15 @@ export declare class ImpossiblePair extends _Contract {
     };
     getPairSettings: {
         (options?: TransactionOptions): Promise<{
-            _tradeFee: BigNumber;
-            _tradeState: BigNumber;
-            _isXybk: boolean;
+            tradeFee: BigNumber;
+            tradeState: BigNumber;
+            isXybk: boolean;
         }>;
     };
     getReserves: {
         (options?: TransactionOptions): Promise<{
-            _reserve0: BigNumber;
-            _reserve1: BigNumber;
+            reserve0: BigNumber;
+            reserve1: BigNumber;
         }>;
     };
     initialize: {
@@ -240,9 +240,9 @@ export declare module ImpossiblePair {
         _event: Event;
     }
     interface ChangeInvariantEvent {
-        _isXybk: boolean;
-        _newBoost0: BigNumber;
-        _newBoost1: BigNumber;
+        isXybk: boolean;
+        newBoost0: BigNumber;
+        newBoost1: BigNumber;
         _event: Event;
     }
     interface MintEvent {
@@ -272,31 +272,31 @@ export declare module ImpossiblePair {
         _event: Event;
     }
     interface UpdatedBoostEvent {
-        _oldBoost0: BigNumber;
-        _oldBoost1: BigNumber;
-        _newBoost0: BigNumber;
-        _newBoost1: BigNumber;
-        _start: BigNumber;
-        _end: BigNumber;
+        oldBoost0: BigNumber;
+        oldBoost1: BigNumber;
+        newBoost0: BigNumber;
+        newBoost1: BigNumber;
+        start: BigNumber;
+        end: BigNumber;
         _event: Event;
     }
     interface UpdatedDelayEvent {
-        _oldDelay: BigNumber;
-        _newDelay: BigNumber;
+        oldDelay: BigNumber;
+        newDelay: BigNumber;
         _event: Event;
     }
     interface UpdatedTradeFeesEvent {
-        _oldFee: BigNumber;
-        _newFee: BigNumber;
+        oldFee: BigNumber;
+        newFee: BigNumber;
         _event: Event;
     }
     interface UpdatedTradeStateEvent {
-        _tradeState: BigNumber;
+        tradeState: BigNumber;
         _event: Event;
     }
     interface UpdatedWithdrawalFeeRatioEvent {
-        _oldWithdrawalFee: BigNumber;
-        _newWithdrawalFee: BigNumber;
+        oldWithdrawalFee: BigNumber;
+        newWithdrawalFee: BigNumber;
         _event: Event;
     }
 }

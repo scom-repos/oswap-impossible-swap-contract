@@ -157,8 +157,8 @@ define("@scom/oswap-impossible-swap-contract/contracts/ImpossibleERC20.ts", ["re
             });
         }
     }
-    exports.ImpossibleERC20 = ImpossibleERC20;
     ImpossibleERC20._abi = ImpossibleERC20_json_1.default.abi;
+    exports.ImpossibleERC20 = ImpossibleERC20;
 });
 define("@scom/oswap-impossible-swap-contract/contracts/ImpossiblePair.json.ts", ["require", "exports"], function (require, exports) {
     "use strict";
@@ -266,9 +266,9 @@ define("@scom/oswap-impossible-swap-contract/contracts/ImpossiblePair.ts", ["req
         decodeChangeInvariantEvent(event) {
             let result = event.data;
             return {
-                _isXybk: result._isXybk,
-                _newBoost0: new eth_contract_2.BigNumber(result._newBoost0),
-                _newBoost1: new eth_contract_2.BigNumber(result._newBoost1),
+                isXybk: result._isXybk,
+                newBoost0: new eth_contract_2.BigNumber(result._newBoost0),
+                newBoost1: new eth_contract_2.BigNumber(result._newBoost1),
                 _event: event
             };
         }
@@ -328,12 +328,12 @@ define("@scom/oswap-impossible-swap-contract/contracts/ImpossiblePair.ts", ["req
         decodeUpdatedBoostEvent(event) {
             let result = event.data;
             return {
-                _oldBoost0: new eth_contract_2.BigNumber(result._oldBoost0),
-                _oldBoost1: new eth_contract_2.BigNumber(result._oldBoost1),
-                _newBoost0: new eth_contract_2.BigNumber(result._newBoost0),
-                _newBoost1: new eth_contract_2.BigNumber(result._newBoost1),
-                _start: new eth_contract_2.BigNumber(result._start),
-                _end: new eth_contract_2.BigNumber(result._end),
+                oldBoost0: new eth_contract_2.BigNumber(result._oldBoost0),
+                oldBoost1: new eth_contract_2.BigNumber(result._oldBoost1),
+                newBoost0: new eth_contract_2.BigNumber(result._newBoost0),
+                newBoost1: new eth_contract_2.BigNumber(result._newBoost1),
+                start: new eth_contract_2.BigNumber(result._start),
+                end: new eth_contract_2.BigNumber(result._end),
                 _event: event
             };
         }
@@ -343,8 +343,8 @@ define("@scom/oswap-impossible-swap-contract/contracts/ImpossiblePair.ts", ["req
         decodeUpdatedDelayEvent(event) {
             let result = event.data;
             return {
-                _oldDelay: new eth_contract_2.BigNumber(result._oldDelay),
-                _newDelay: new eth_contract_2.BigNumber(result._newDelay),
+                oldDelay: new eth_contract_2.BigNumber(result._oldDelay),
+                newDelay: new eth_contract_2.BigNumber(result._newDelay),
                 _event: event
             };
         }
@@ -354,8 +354,8 @@ define("@scom/oswap-impossible-swap-contract/contracts/ImpossiblePair.ts", ["req
         decodeUpdatedTradeFeesEvent(event) {
             let result = event.data;
             return {
-                _oldFee: new eth_contract_2.BigNumber(result._oldFee),
-                _newFee: new eth_contract_2.BigNumber(result._newFee),
+                oldFee: new eth_contract_2.BigNumber(result._oldFee),
+                newFee: new eth_contract_2.BigNumber(result._newFee),
                 _event: event
             };
         }
@@ -365,7 +365,7 @@ define("@scom/oswap-impossible-swap-contract/contracts/ImpossiblePair.ts", ["req
         decodeUpdatedTradeStateEvent(event) {
             let result = event.data;
             return {
-                _tradeState: new eth_contract_2.BigNumber(result._tradeState),
+                tradeState: new eth_contract_2.BigNumber(result._tradeState),
                 _event: event
             };
         }
@@ -375,8 +375,8 @@ define("@scom/oswap-impossible-swap-contract/contracts/ImpossiblePair.ts", ["req
         decodeUpdatedWithdrawalFeeRatioEvent(event) {
             let result = event.data;
             return {
-                _oldWithdrawalFee: new eth_contract_2.BigNumber(result._oldWithdrawalFee),
-                _newWithdrawalFee: new eth_contract_2.BigNumber(result._newWithdrawalFee),
+                oldWithdrawalFee: new eth_contract_2.BigNumber(result._oldWithdrawalFee),
+                newWithdrawalFee: new eth_contract_2.BigNumber(result._newWithdrawalFee),
                 _event: event
             };
         }
@@ -410,8 +410,8 @@ define("@scom/oswap-impossible-swap-contract/contracts/ImpossiblePair.ts", ["req
             let calcBoost_call = async (options) => {
                 let result = await this.call('calcBoost', [], options);
                 return {
-                    _boost0: new eth_contract_2.BigNumber(result._boost0),
-                    _boost1: new eth_contract_2.BigNumber(result._boost1)
+                    boost0: new eth_contract_2.BigNumber(result._boost0),
+                    boost1: new eth_contract_2.BigNumber(result._boost1)
                 };
             };
             this.calcBoost = calcBoost_call;
@@ -438,17 +438,17 @@ define("@scom/oswap-impossible-swap-contract/contracts/ImpossiblePair.ts", ["req
             let getPairSettings_call = async (options) => {
                 let result = await this.call('getPairSettings', [], options);
                 return {
-                    _tradeFee: new eth_contract_2.BigNumber(result._tradeFee),
-                    _tradeState: new eth_contract_2.BigNumber(result._tradeState),
-                    _isXybk: result._isXybk
+                    tradeFee: new eth_contract_2.BigNumber(result._tradeFee),
+                    tradeState: new eth_contract_2.BigNumber(result._tradeState),
+                    isXybk: result._isXybk
                 };
             };
             this.getPairSettings = getPairSettings_call;
             let getReserves_call = async (options) => {
                 let result = await this.call('getReserves', [], options);
                 return {
-                    _reserve0: new eth_contract_2.BigNumber(result._reserve0),
-                    _reserve1: new eth_contract_2.BigNumber(result._reserve1)
+                    reserve0: new eth_contract_2.BigNumber(result._reserve0),
+                    reserve1: new eth_contract_2.BigNumber(result._reserve1)
                 };
             };
             this.getReserves = getReserves_call;
@@ -707,8 +707,8 @@ define("@scom/oswap-impossible-swap-contract/contracts/ImpossiblePair.ts", ["req
             });
         }
     }
-    exports.ImpossiblePair = ImpossiblePair;
     ImpossiblePair._abi = ImpossiblePair_json_1.default.abi;
+    exports.ImpossiblePair = ImpossiblePair;
 });
 define("@scom/oswap-impossible-swap-contract/contracts/ImpossibleRouter.json.ts", ["require", "exports"], function (require, exports) {
     "use strict";
@@ -1015,8 +1015,8 @@ define("@scom/oswap-impossible-swap-contract/contracts/ImpossibleRouter.ts", ["r
             });
         }
     }
-    exports.ImpossibleRouter = ImpossibleRouter;
     ImpossibleRouter._abi = ImpossibleRouter_json_1.default.abi;
+    exports.ImpossibleRouter = ImpossibleRouter;
 });
 define("@scom/oswap-impossible-swap-contract/contracts/ImpossibleRouterExtension.json.ts", ["require", "exports"], function (require, exports) {
     "use strict";
@@ -1142,8 +1142,8 @@ define("@scom/oswap-impossible-swap-contract/contracts/ImpossibleRouterExtension
             });
         }
     }
-    exports.ImpossibleRouterExtension = ImpossibleRouterExtension;
     ImpossibleRouterExtension._abi = ImpossibleRouterExtension_json_1.default.abi;
+    exports.ImpossibleRouterExtension = ImpossibleRouterExtension;
 });
 define("@scom/oswap-impossible-swap-contract/contracts/ImpossibleSwapFactory.json.ts", ["require", "exports"], function (require, exports) {
     "use strict";
@@ -1326,8 +1326,8 @@ define("@scom/oswap-impossible-swap-contract/contracts/ImpossibleSwapFactory.ts"
             });
         }
     }
-    exports.ImpossibleSwapFactory = ImpossibleSwapFactory;
     ImpossibleSwapFactory._abi = ImpossibleSwapFactory_json_1.default.abi;
+    exports.ImpossibleSwapFactory = ImpossibleSwapFactory;
 });
 define("@scom/oswap-impossible-swap-contract/contracts/ImpossibleWrappedToken.json.ts", ["require", "exports"], function (require, exports) {
     "use strict";
@@ -1513,8 +1513,8 @@ define("@scom/oswap-impossible-swap-contract/contracts/ImpossibleWrappedToken.ts
             });
         }
     }
-    exports.ImpossibleWrappedToken = ImpossibleWrappedToken;
     ImpossibleWrappedToken._abi = ImpossibleWrappedToken_json_1.default.abi;
+    exports.ImpossibleWrappedToken = ImpossibleWrappedToken;
 });
 define("@scom/oswap-impossible-swap-contract/contracts/ImpossibleWrapperFactory.json.ts", ["require", "exports"], function (require, exports) {
     "use strict";
@@ -1623,8 +1623,8 @@ define("@scom/oswap-impossible-swap-contract/contracts/ImpossibleWrapperFactory.
             });
         }
     }
-    exports.ImpossibleWrapperFactory = ImpossibleWrapperFactory;
     ImpossibleWrapperFactory._abi = ImpossibleWrapperFactory_json_1.default.abi;
+    exports.ImpossibleWrapperFactory = ImpossibleWrapperFactory;
 });
 define("@scom/oswap-impossible-swap-contract/contracts/test/DeflatingERC20.json.ts", ["require", "exports"], function (require, exports) {
     "use strict";
@@ -1785,8 +1785,8 @@ define("@scom/oswap-impossible-swap-contract/contracts/test/DeflatingERC20.ts", 
             });
         }
     }
-    exports.DeflatingERC20 = DeflatingERC20;
     DeflatingERC20._abi = DeflatingERC20_json_1.default.abi;
+    exports.DeflatingERC20 = DeflatingERC20;
 });
 define("@scom/oswap-impossible-swap-contract/contracts/test/ERC20.json.ts", ["require", "exports"], function (require, exports) {
     "use strict";
@@ -1947,8 +1947,8 @@ define("@scom/oswap-impossible-swap-contract/contracts/test/ERC20.ts", ["require
             });
         }
     }
-    exports.ERC20 = ERC20;
     ERC20._abi = ERC20_json_1.default.abi;
+    exports.ERC20 = ERC20;
 });
 define("@scom/oswap-impossible-swap-contract/contracts/test/WETH9.json.ts", ["require", "exports"], function (require, exports) {
     "use strict";
@@ -2125,8 +2125,8 @@ define("@scom/oswap-impossible-swap-contract/contracts/test/WETH9.ts", ["require
             });
         }
     }
-    exports.WETH9 = WETH9;
     WETH9._abi = WETH9_json_1.default.abi;
+    exports.WETH9 = WETH9;
 });
 define("@scom/oswap-impossible-swap-contract/contracts/index.ts", ["require", "exports", "@scom/oswap-impossible-swap-contract/contracts/ImpossibleERC20.ts", "@scom/oswap-impossible-swap-contract/contracts/ImpossiblePair.ts", "@scom/oswap-impossible-swap-contract/contracts/ImpossibleRouter.ts", "@scom/oswap-impossible-swap-contract/contracts/ImpossibleRouterExtension.ts", "@scom/oswap-impossible-swap-contract/contracts/ImpossibleSwapFactory.ts", "@scom/oswap-impossible-swap-contract/contracts/ImpossibleWrappedToken.ts", "@scom/oswap-impossible-swap-contract/contracts/ImpossibleWrapperFactory.ts", "@scom/oswap-impossible-swap-contract/contracts/test/DeflatingERC20.ts", "@scom/oswap-impossible-swap-contract/contracts/test/ERC20.ts", "@scom/oswap-impossible-swap-contract/contracts/test/WETH9.ts"], function (require, exports, ImpossibleERC20_1, ImpossiblePair_1, ImpossibleRouter_1, ImpossibleRouterExtension_1, ImpossibleSwapFactory_1, ImpossibleWrappedToken_1, ImpossibleWrapperFactory_1, DeflatingERC20_1, ERC20_1, WETH9_1) {
     "use strict";

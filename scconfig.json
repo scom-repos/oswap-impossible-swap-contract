@@ -1,0 +1,10 @@
+{
+    "type": "contract",
+    "solidity": {
+        "version": "0.7.6",
+        "optimizerRuns": 200,
+        "sourceDir": "contracts",
+        "outputDir": "src/contracts",
+        "outputObjects": "bytecode"
+    }
+}

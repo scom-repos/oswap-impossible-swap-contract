@@ -1,0 +1,9 @@
+{
+    "name": "@scom/oswap-impossible-swap-contract",
+    "type": "contract",
+    "version": "0.1.0",
+    "dependencies": [
+        "@ijstech/eth-contract",
+        "@ijstech/eth-wallet"
+    ]
+}
